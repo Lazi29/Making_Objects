@@ -1,5 +1,5 @@
 //this is my Bicycle Subclass//
-public class Bicle extends Vehicle_Base{
+public class Bicycle extends Vehicle_Base{
     private boolean hasBell;
 
     public Bicycle(int speed, int fuel, boolean hasBell){
@@ -12,7 +12,7 @@ public class Bicle extends Vehicle_Base{
         System.out.println("Pedal Away!!");
     }
 
-    public voud ringBell(){
+    public void ringBell(){
         if(hasBell){
             System.out.println("Ring Ring!!");
              } else {
@@ -25,5 +25,6 @@ public class Bicle extends Vehicle_Base{
         public void setHasBell(boolean hasBell) {
             this.hasBell = hasBell;
         }
+      
     }
 }

@@ -20,6 +20,7 @@ public class Vehicle_Base{
     }
 
         //Geter//
+        private int speed;
      public int getSpeed(){
         return speed;
      }
@@ -31,7 +32,7 @@ public class Vehicle_Base{
     public void setSpeed(int speed){
         this.speed = speed;
     }
-    public void setFue(Double fuel){
+    public void setFue(double fuel){
         this.fuel = fuel;
     }
 
@@ -43,6 +44,15 @@ public class Vehicle_Base{
         Vehicle_Base myCar = new Vehicle_Base(120,50.9);
    
     }
+    public void consumeFuel (double amount) {
+    if (fuel >= amount) {
+    fuel -= amount;
+    System.out. println("Fuel consumed: " + amount) ;
+    displayFuel ();
+    } else {
+    System. out. plintln("Not enoughfuel!");
+    }
+
 
 }
 
